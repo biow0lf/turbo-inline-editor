@@ -38,4 +38,6 @@ Gem::Specification.new do |spec|
   # guide at: https://bundler.io/guides/creating_gem.html
 
   spec.add_dependency "turbo-rails"
+
+  spec.add_development_dependency "appraisal"
 end
