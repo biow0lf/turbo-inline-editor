@@ -2,6 +2,9 @@
 
 require_relative "editor/version"
 
+require_relative "editor/engine"
+require_relative "editor/helper"
+
 module Turbo
   module Inline
     module Editor
