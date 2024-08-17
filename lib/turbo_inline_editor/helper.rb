@@ -13,6 +13,11 @@ module TurboInlineEditor
     # @param field [Object]
     # @param options [Hash] Default: {}
     def turbo_inline_editor_if(condition, object, field, options = {})
+      if condition
+        turbo_inline_editor(object, field, options)
+      else
+        # TODO: write
+      end
     end
   end
 end
