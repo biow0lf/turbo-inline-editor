@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "rails/engine"
+
 module Turbo
   module Inline
     module Editor

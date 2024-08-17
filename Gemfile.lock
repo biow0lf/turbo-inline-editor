@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     turbo-inline-editor (0.1.0)
+      railties (>= 7.0)
       turbo-rails
 
 GEM
