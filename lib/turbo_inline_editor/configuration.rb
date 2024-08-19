@@ -6,6 +6,14 @@ module TurboInlineEditor
     yield @configuration if block_given?
   end
 
+  def self.method_missing(method_name, *args, &block)
+    if @configuration.respond_to?(method_name)
+      @configuration.send(method_name, *args, &block)
+    else
+      super
+    end
+  end
+
   class Configuration
     attr_accessor :container #, :skip_blur
 
